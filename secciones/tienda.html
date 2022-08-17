@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Tienda</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <h1 class="titulo">Critical Hit</h1>
+        <a href="../index.html">
+          <div class="logos">
+            <img src="../img/dadovec20.png" alt="crithitlogo" class="logo20" />
+            <img src="../img/dadovec.png" alt="crithitlogo" class="logo" />
+          </div>
+        </a>
+      </div>
+      <nav class="ul-container">
+        <ul class="navbar-container">
+          <li>
+            <a class="boton navbar-link" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="boton navbar-link" href="./tienda.html">Store</a>
+          </li>
+          <li>
+            <a class="boton navbar-link" href="./contacto.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main-section">
+        <div class="menu">
+          <div class="menu-item">
+            <p class="tituloArticulo">
+              Blue set
+              <span id="producto0"> </span>
+              <button class="botones" onclick="addToCart(0)">+</button>
+              <button
+                class="botones"
+                id="minus0"
+                onclick="removeFromCart(0)"
+                disabled
+              >
+                -
+              </button>
+            </p>
+            <img class="controlImagen" src="../img/blue.jpg" />
+            <p class="precioArticulo">$50</p>
+          </div>
+          <div class="menu-item">
+            <p class="tituloArticulo">
+              Red set
+              <span id="producto1"> </span>
+              <button class="botones" onclick="addToCart(1)">+</button>
+              <button
+                class="botones"
+                id="minus1"
+                onclick="removeFromCart(1)"
+                disabled
+              >
+                -
+              </button>
+            </p>
+            <img class="controlImagen" src="../img/red.jpg" />
+            <p class="precioArticulo">$50</p>
+          </div>
+          <div class="menu-item">
+            <p class="tituloArticulo">
+              Mix set
+              <span id="producto2"> </span>
+              <button class="botones" onclick="addToCart(2)">+</button>
+              <button
+                class="botones"
+                id="minus2"
+                onclick="removeFromCart(2)"
+                disabled
+              >
+                -
+              </button>
+            </p>
+            <img class="controlImagen" src="../img/mix.jpg" />
+            <p class="precioArticulo">$150</p>
+          </div>
+        </div>
+        <div class="cart" id="cart">
+          <h3 class="tituloCarro">Cart</h3>
+          <p class="totalCarro" id="total"></p>
+        </div>
+      </div>
+    </main>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
