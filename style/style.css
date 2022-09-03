@@ -46,11 +46,11 @@ body {
   margin-bottom: 0px;
   width: 15vw;
   box-shadow: 10px 10px 5px rgb(78, 2, 2);
+  text-align: center;
 }
 .totalCarro {
   display: flex;
   flex-direction: column;
-  padding-left: 75px;
 }
 
 .controlImagen {
@@ -62,10 +62,8 @@ body {
 .botones {
   width: 35px;
   border-radius: 8px;
-  color: #530404;
   background-color: #ffffff;
   border: solid;
-  border-color: #5c0303;
 }
 
 .tituloArticulo {

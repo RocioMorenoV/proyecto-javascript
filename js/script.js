@@ -3,6 +3,8 @@ const prod1 = { name: "azules", price: 50, quantity: 1 };
 const prod2 = { name: "rojos", price: 50, quantity: 1 };
 const prod3 = { name: "mixtos", price: 150, quantity: 1 };
 let stock = [prod1, prod2, prod3];
+
+// Descomentar la siguiente linea para vaciar el carrito cada vez que se recarga la pagina.
 // localStorage.cart = JSON.stringify(cart);
 
 if (typeof Storage !== "undefined") {
@@ -35,7 +37,8 @@ function total() {
   cart.forEach((element) => {
     total = total + element.price * element.quantity;
   });
-  document.getElementById("total").innerHTML = displayMessage + total;
+  document.getElementById("total").innerHTML =
+    total == 0 ? "Your cart is empty 🙊" : displayMessage + total;
 }
 
 function addToCart(selectedProduct) {
